@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top right, #6b66af, #09090b);
+  color: #f8fafc;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+/* Scrollbar personalizada estilo moderno (fina y redondeada) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #52525b;
+}
+
+.reel-card {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+.reel-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.5);
+}
+
+
+form {
+  border: #09090b solid 1px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(59, 130, 246, 0.1);
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  padding-left: 2%;
+  background-color: #1f2937;
+  margin-right: 65%;
+}
+
+form:focus-within {
+  transform: translateY(-2px);
+}
+
+input, select {
+  transition: all 0.2s ease-in-out;
+}.group {
+  /* Esto añade un brillo en el borde cuando pasas el ratón */
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.group:hover {
+  border-color: #3b82f6; /* Azul de Tailwind al hacer hover */
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.15);
+}
+
+
+/* Efecto de elevación para los botones del Reel */
+
+button{
+  background-color: #3b82f6;  
+  
+  width: 10vh;
+  height: 5%;
+  transition: 0.5s;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+button:hover::after {
+  left: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+h2 {
+  font-size: 2.25rem;
+  font-family: fantasy;
+}
+
+.SI {
+  border: #09090b solid 1px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(59, 130, 246, 0.1);
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #1f2937;
+  margin-right: 65%;
+}
